@@ -9,7 +9,7 @@ pipeline {
 
         stage('Checkout Code') {
             steps {
-                git 'https://github.com/Eswaresa/Master-Data-Management-automation-framework.git'
+                git branch: 'main', url: 'https://github.com/Eswaresa/Master-Data-Management-automation-framework.git'
             }
         }
 
