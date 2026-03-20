@@ -38,6 +38,11 @@ public class ConfigReader {
 		
 	}
 	
+	public String getInvalidPassword() {
+		return prop.getProperty("InvalidPassword");
+		
+	}
+	
 	
 	
 	

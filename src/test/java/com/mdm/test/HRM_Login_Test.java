@@ -35,6 +35,37 @@ public class HRM_Login_Test extends BaseTest {
 		System.out.println(Actual);
 		Assert.assertTrue(Expected.contains(Actual));
 
+		String ExpectedUrl = "https://opensource-demo.orangehrmlive.com/web/index.php/dashboard/index";
+
+		String CurrentURL = driver.getCurrentUrl();
+
+		System.out.println(CurrentURL);
+		Assert.assertEquals(CurrentURL, ExpectedUrl);
+
+	}
+	
+	@Test
+	public void loginTest_inValid_passWord() throws IOException {
+		lp = new LoginPage(driver);
+		ConfigReader cr = new ConfigReader();
+		String URL = cr.getURL();
+		String username = cr.getUserName();
+		String invalidPassword = cr.getInvalidPassword();
+		
+		driver.get(URL);
+		lp.userName(username);
+		lp.passWord(invalidPassword);
+		lp.logInButton();
+		
+		String Expected = "Invalid credentials";
+		String Actual = lp.invalidMessage();
+		
+		System.out.println(Actual);
+		
+		
+		Assert.assertTrue(Expected.contains(Actual));
+		
+		
 	}
 
 }
