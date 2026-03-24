@@ -1,7 +1,12 @@
 package com.mdm.pages;
 
+import java.time.Duration;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class LoginPage {
 
@@ -18,7 +23,11 @@ public class LoginPage {
 	}
 
 	public void userName(String user) {
-		driver.findElement(usernmae).sendKeys(user);
+	    WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
+	    WebElement usernameField = wait.until(
+	        ExpectedConditions.visibilityOfElementLocated(By.name("username"))
+	    );
+	    usernameField.sendKeys(user);
 	}
 
 	public void passWord(String pass) {

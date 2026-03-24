@@ -1,0 +1,16 @@
+
+<suite name="MDM Automation Suite">
+
+	<test name="Web Appication Test">
+
+		<classes>
+
+			<class name="com.mdm.test.HRM_Login_Test" />
+			<class name="com.mdm.test.HRM_PIM_Test" />
+
+		</classes>
+
+	</test>
+
+
+</suite>

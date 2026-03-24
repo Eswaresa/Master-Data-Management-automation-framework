@@ -1,37 +1,63 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-03-20T16:53:59 IST" name="Default suite" finished-at="2026-03-20T16:54:23 IST" duration-ms="24247">
+  <suite started-at="2026-03-24T21:26:06 IST" name="MDM Automation Suite" finished-at="2026-03-24T21:27:14 IST" duration-ms="68250">
     <groups>
     </groups>
-    <test started-at="2026-03-20T16:53:59 IST" name="Default test" finished-at="2026-03-20T16:54:23 IST" duration-ms="24247">
+    <test started-at="2026-03-24T21:26:06 IST" name="Web Appication Test" finished-at="2026-03-24T21:27:14 IST" duration-ms="68250">
       <class name="com.mdm.test.HRM_Login_Test">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.mdm.test.HRM_Login_Test@50a638b5]" started-at="2026-03-20T16:53:59 IST" name="setUp" finished-at="2026-03-20T16:54:01 IST" duration-ms="1716" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.mdm.test.HRM_Login_Test@6580cfdd]" started-at="2026-03-24T21:26:06 IST" name="setUp" finished-at="2026-03-24T21:26:07 IST" duration-ms="1652" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="loginTest_Valid_userName_passWord()[pri:0, instance:com.mdm.test.HRM_Login_Test@50a638b5]" started-at="2026-03-20T16:54:01 IST" name="loginTest_Valid_userName_passWord" finished-at="2026-03-20T16:54:11 IST" duration-ms="10263" status="PASS">
+        <test-method signature="loginTest_Valid_userName_passWord()[pri:0, instance:com.mdm.test.HRM_Login_Test@6580cfdd]" started-at="2026-03-24T21:26:07 IST" name="loginTest_Valid_userName_passWord" finished-at="2026-03-24T21:26:17 IST" duration-ms="9705" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginTest_Valid_userName_passWord -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.mdm.test.HRM_Login_Test@50a638b5]" started-at="2026-03-20T16:54:11 IST" name="tearDown" finished-at="2026-03-20T16:54:11 IST" duration-ms="263" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.mdm.test.HRM_Login_Test@6580cfdd]" started-at="2026-03-24T21:26:17 IST" name="tearDown" finished-at="2026-03-24T21:26:17 IST" duration-ms="162" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.mdm.test.HRM_Login_Test@50a638b5]" started-at="2026-03-20T16:54:11 IST" name="setUp" finished-at="2026-03-20T16:54:12 IST" duration-ms="843" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.mdm.test.HRM_Login_Test@6580cfdd]" started-at="2026-03-24T21:26:17 IST" name="setUp" finished-at="2026-03-24T21:26:18 IST" duration-ms="788" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="loginTest_inValid_passWord()[pri:0, instance:com.mdm.test.HRM_Login_Test@50a638b5]" started-at="2026-03-20T16:54:12 IST" name="loginTest_inValid_passWord" finished-at="2026-03-20T16:54:23 IST" duration-ms="10855" status="PASS">
+        <test-method signature="loginTest_inValid_passWord()[pri:0, instance:com.mdm.test.HRM_Login_Test@6580cfdd]" started-at="2026-03-24T21:26:18 IST" name="loginTest_inValid_passWord" finished-at="2026-03-24T21:26:45 IST" duration-ms="26720" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginTest_inValid_passWord -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.mdm.test.HRM_Login_Test@50a638b5]" started-at="2026-03-20T16:54:23 IST" name="tearDown" finished-at="2026-03-20T16:54:23 IST" duration-ms="256" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.mdm.test.HRM_Login_Test@6580cfdd]" started-at="2026-03-24T21:26:45 IST" name="tearDown" finished-at="2026-03-24T21:26:45 IST" duration-ms="153" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.mdm.test.HRM_Login_Test -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      <class name="com.mdm.test.HRM_PIM_Test">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.mdm.test.HRM_PIM_Test@243c4f91]" started-at="2026-03-24T21:26:45 IST" name="setUp" finished-at="2026-03-24T21:26:45 IST" duration-ms="693" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="empListValidation()[pri:0, instance:com.mdm.test.HRM_PIM_Test@243c4f91]" started-at="2026-03-24T21:26:45 IST" name="empListValidation" finished-at="2026-03-24T21:27:00 IST" duration-ms="14320" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- empListValidation -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.mdm.test.HRM_PIM_Test@243c4f91]" started-at="2026-03-24T21:27:00 IST" name="tearDown" finished-at="2026-03-24T21:27:00 IST" duration-ms="259" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.mdm.test.HRM_PIM_Test@243c4f91]" started-at="2026-03-24T21:27:00 IST" name="setUp" finished-at="2026-03-24T21:27:01 IST" duration-ms="760" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="eployeeSearchValidation()[pri:0, instance:com.mdm.test.HRM_PIM_Test@243c4f91]" started-at="2026-03-24T21:27:01 IST" name="eployeeSearchValidation" finished-at="2026-03-24T21:27:14 IST" duration-ms="12803" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- eployeeSearchValidation -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.mdm.test.HRM_PIM_Test@243c4f91]" started-at="2026-03-24T21:27:14 IST" name="tearDown" finished-at="2026-03-24T21:27:14 IST" duration-ms="189" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.mdm.test.HRM_PIM_Test -->
+    </test> <!-- Web Appication Test -->
+  </suite> <!-- MDM Automation Suite -->
 </testng-results>

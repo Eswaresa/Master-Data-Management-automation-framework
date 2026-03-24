@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.mdm.test.HRM_Login_Test">
+      <class name="com.mdm.test.HRM_PIM_Test">
         <methods>
-          <include name="loginTest_inValid_passWord"/>
           <include name="setUp"/>
+          <include name="eployeeSearchValidation"/>
           <include name="tearDown"/>
         </methods>
-      </class> <!-- com.mdm.test.HRM_Login_Test -->
+      </class> <!-- com.mdm.test.HRM_PIM_Test -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
