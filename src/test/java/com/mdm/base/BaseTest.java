@@ -24,10 +24,7 @@ public void setUp() {
 @AfterMethod
 public void tearDown() {
 	
-	if(driver!=null) {
-		driver.quit();
-	}
-	
+	DriverFactory.quitDriver();
 }
 
 

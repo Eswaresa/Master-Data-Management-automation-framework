@@ -1,16 +1,17 @@
 
-<suite name="MDM Automation Suite">
 
-	<test name="Web Appication Test">
+<suite name="MDM Automation Suite" parallel="tests" thread-count="2">
 
-		<classes>
+    <test name="Login Tests">
+        <classes>
+            <class name="com.mdm.test.HRM_Login_Test"/>
+        </classes>
+    </test>
 
-			<class name="com.mdm.test.HRM_Login_Test" />
-			<class name="com.mdm.test.HRM_PIM_Test" />
-
-		</classes>
-
-	</test>
-
+    <test name="PIM Tests">
+        <classes>
+            <class name="com.mdm.test.HRM_PIM_Test"/>
+        </classes>
+    </test>
 
 </suite>

@@ -8,6 +8,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import com.mdm.utils.WaitUtils;
+
 public class LoginPage {
 
 	WebDriver driver;
@@ -21,6 +23,8 @@ public class LoginPage {
 		this.driver = driver;
 
 	}
+	
+	
 
 	public void userName(String user) {
 	    WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
@@ -41,6 +45,11 @@ public class LoginPage {
 	public String invalidMessage() {
 		return driver.findElement(invalidMsg).getText();
 		
+	}
+	public void login(String user, String pass) {
+	    WaitUtils.waitforElement(driver, usernmae).sendKeys(user);
+	    driver.findElement(password).sendKeys(pass);
+	    driver.findElement(loginBtn).click();
 	}
 
 }

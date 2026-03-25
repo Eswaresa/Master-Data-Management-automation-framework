@@ -9,13 +9,50 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">MDM Automation Suite</th></tr>
-<tr><td><a href="#t0">Web Appication Test</a></td><td class="num">4</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">68,250</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Login Tests</a></td><td class="num">2</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">30,619</td><td></td><td></td></tr>
+<tr class="stripe"><td><a href="#t1">PIM Tests</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num attn">2</td><td class="num">60,456</td><td></td><td></td></tr>
+<tr><th>Total</th><th class="num">2</th><th class="num">0</th><th class="num">0</th><th class="num attn">2</th><th class="num">91,075</th><th colspan="2"></th></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">MDM Automation Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Web Appication Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="2">com.mdm.test.HRM_Login_Test</td><td><a href="#m0">loginTest_Valid_userName_passWord</a></td><td rowspan="1">1774367767751</td><td rowspan="1">9705</td></tr><tr class="passedeven"><td><a href="#m1">loginTest_inValid_passWord</a></td><td rowspan="1">1774367778410</td><td rowspan="1">26720</td></tr><tr class="passedodd"><td rowspan="2">com.mdm.test.HRM_PIM_Test</td><td><a href="#m2">empListValidation</a></td><td rowspan="1">1774367805981</td><td rowspan="1">14320</td></tr><tr class="passedodd"><td><a href="#m3">eployeeSearchValidation</a></td><td rowspan="1">1774367821331</td><td rowspan="1">12803</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">MDM Automation Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Login Tests &#8212; passed</th></tr><tr class="passedeven"><td rowspan="2">com.mdm.test.HRM_Login_Test</td><td><a href="#m0">loginTest_Valid_userName_passWord</a></td><td rowspan="1">1774440566895</td><td rowspan="1">8267</td></tr><tr class="passedeven"><td><a href="#m1">loginTest_inValid_passWord</a></td><td rowspan="1">1774440580706</td><td rowspan="1">6051</td></tr></tbody>
+<tbody id="t1"><tr><th colspan="4">PIM Tests &#8212; failed</th></tr><tr class="failedeven"><td rowspan="2">com.mdm.test.HRM_PIM_Test</td><td><a href="#m2">empListValidation</a></td><td rowspan="1">1774440571218</td><td rowspan="1">28480</td></tr><tr class="failedeven"><td><a href="#m3">eployeeSearchValidation</a></td><td rowspan="1">1774440611629</td><td rowspan="1">5018</td></tr></tbody>
 </table>
-<h2>Web Appication Test</h2><h3 id="m0">com.mdm.test.HRM_Login_Test#loginTest_Valid_userName_passWord</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Login Tests</h2><h3 id="m0">com.mdm.test.HRM_Login_Test#loginTest_Valid_userName_passWord</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 <h3 id="m1">com.mdm.test.HRM_Login_Test#loginTest_inValid_passWord</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">com.mdm.test.HRM_PIM_Test#empListValidation</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m3">com.mdm.test.HRM_PIM_Test#eployeeSearchValidation</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>PIM Tests</h2><h3 id="m2">com.mdm.test.HRM_PIM_Test#empListValidation</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: VEmployee list is empty expected [true] but found [false]
+	at com.mdm.test.HRM_PIM_Test.empListValidation(HRM_PIM_Test.java:40)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+... Removed 18 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">com.mdm.test.HRM_PIM_Test#eployeeSearchValidation</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//aside//span[text()=&apos;PIM&apos;]&quot;}
+  (Session info: chrome=146.0.7680.164)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.18.1&apos;, revision: &apos;b1d3319b48&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;25.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [d214294f067b56b18ffc82974ffea4de, findElement {using=xpath, value=//aside//span[text()=&apos;PIM&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 146.0.7680.164, chrome: {chromedriverVersion: 146.0.7680.165 (4b989da09e1..., userDataDir: C:\Users\DELL\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55618}, goog:processID: 18544, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55618/devtoo..., se:cdpVersion: 146.0.7680.164, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: d214294f067b56b18ffc82974ffea4de
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:356)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
+	at com.mdm.pages.PIMPage.pimClickButton(PIMPage.java:33)
+	at com.mdm.test.HRM_PIM_Test.eployeeSearchValidation(HRM_PIM_Test.java:47)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+... Removed 18 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>
